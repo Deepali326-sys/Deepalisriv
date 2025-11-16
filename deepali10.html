@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepali Srivastav - Portfolio</title>
+
+    <!-- CSS Inside Same File -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #0a3d62;
+            padding: 15px 0;
+        }
+
+        header .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .hero-text h2 {
+            font-size: 32px;
+            color: #0a3d62;
+        }
+
+        .hero-text span {
+            color: #e84118;
+            font-weight: bold;
+        }
+
+        .hero-img img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            border: 5px solid #0a3d62;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #0a3d62;
+            margin-bottom: 15px;
+        }
+
+        .skills-box span {
+            background: #0a3d62;
+            color: white;
+            padding: 8px 14px;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 8px;
+            padding: 8px 15px;
+            background: #e84118;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        form input, form textarea {
+            width: 80%;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #aaa;
+            font-size: 16px;
+        }
+
+        button {
+            background: #0a3d62;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #074a80;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Deepali Srivastav</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I am <span>Deepali Srivastav</span></h2>
+            <p>A passionate B.Tech CSE student, learner & tech explorer.</p>
+        </div>
+
+        <!-- Photo in link form -->
+        <div class="hero-img">
+            <img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/m5t26t4z/Screenshot-20250726-184211-2.png" alt="Screenshot-20250726-184211-2" border="0"></a>" alt="Manime">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am Deepali Srivastav, a Computer Science Engineering student.
+            I love technology, coding, designing and learning new innovations.
+            My aim is to become a skilled software engineer and grow in the tech industry.
+        </p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <ul style="list-style: none; font-size: 18px;">
+            <li><strong>B.Tech (CSE)</strong> – Pursuing</li>
+            <li><strong>12th Passed:</strong> 2024</li>
+            <li><strong>10th Passed:</strong> 2022</li>
+        </ul>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-box">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C Programming</span>
+            <span>Communication Skills</span>
+            <span>Leadership</span>
+        </div>
+    </section>
+
+    <!-- SOCIAL LINKS -->
+    <section class="section">
+        <h2>Social Media Handles</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/deepali-srivastav-198b98378?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Deepali326-sys" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/_sridee03_?igsh=MXMyaHNqcGE3c2djbQ==" target="_blank">Instagram</a>
+            <a href=" https://x.com/Sri326Deepali?t=YE2CjxA0RjR54XoP0LviLA&s=08" target="_blank">X (Twitter)</a>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="responseMsg" style="margin-top: 15px; font-size: 18px; color: green;"></p>
+    </section>
+
+    <!-- JAVASCRIPT Inside Same File -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("responseMsg").innerText =
+                "Thank you! Your message has been successfully submitted.";
+        });
+    </script>
+
+</body>
+</html>
+
